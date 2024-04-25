@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% block title %}<title>Document</title> {% endblock %}
 </head>
 <body>
+    {% block content%}
     <h1>TRELLO TASKS</h1>
+    <ol type="A">
+        <li>Board</li>
+        <li>On progress</li>
+        <li>Date issued</li>
+        <li>Done</li>
+    </ol>
+    <h2>CRUD OPERATIONS</h2>
+    <ol type="i">
+        <li>Create</li>
+        <li>Rename</li>
+        <li>Update</li>
+        <li>Delete</li>
+    </ol>
+    {% endblock %}
 </body>
 </html>
